@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Viewer</title>
+</head>
+<body>
+    <h1>Image Viewer</h1>
+    <button onclick="generateImage()">Generate Image</button>
+    <br>
+    <img id="imageDisplay" src="" alt="Generated Image" style="display: none;">
+    <script>
+        function generateImage() {
+            fetch('/generate_image')
+                .then(response => response.blob())
+                .then(blob => {
+                    const url = URL.createObjectURL(blob);
+                    document.getElementById('imageDisplay').src = url;
+                    document.getElementById('imageDisplay').style.display = 'block';
+                });
+        }
+    </script>
+</body>
+</html>

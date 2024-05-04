@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generation</title>
+</head>
+<body>
+    <h1>Image Generation</h1>
+    <form action="/generate" method="POST" enctype="multipart/form-data">
+        <label for="prompt">Prompt:</label>
+        <input type="text" id="prompt" name="prompt"><br>
+
+        <label for="uncond_prompt">Unconditional Prompt:</label>
+        <input type="text" id="uncond_prompt" name="uncond_prompt"><br>
+
+        <!--
+        <label for="input_image">Input Image:</label>
+        <input type="file" id="input_image" name="input_image"><br>
+
+        <label for="strength">Strength:</label>
+        <input type="number" id="strength" name="strength" step="0.01"><br>
+
+        <label for="do_cfg">Do CFG:</label>
+        <input type="checkbox" id="do_cfg" name="do_cfg" value="true"><br>
+
+        <label for="cfg_scale">CFG Scale:</label>
+        <input type="number" id="cfg_scale" name="cfg_scale"><br>
+
+        <label for="sampler">Sampler:</label>
+        <select id="sampler" name="sampler">
+            <option value="ddpm">DDPM</option>
+            <option value="other_sampler">Other Sampler</option>
+        </select><br>
+
+        <label for="num_inference_steps">Number of Inference Steps:</label>
+        <input type="number" id="num_inference_steps" name="num_inference_steps"><br>
+
+        <label for="seed">Seed:</label>
+        <input type="number" id="seed" name="seed"><br>
+        -->
+        
+        <button type="submit">Generate</button>
+    </form>
+</body>
+</html>
