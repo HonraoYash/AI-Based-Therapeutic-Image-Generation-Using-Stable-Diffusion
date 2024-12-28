@@ -1,3 +1,6 @@
+AI-Based Therapeutic Image Generation Using Stable Diffusion
+
+Abstract -
 In the contemporary landscape of mental health, the urgency for accessible and personalized 
 interventions is heightened by the increasing prevalence of anxiety disorders. This project 
 introduces a pioneering artificial intelligence (AI) system designed to generate personalized 
@@ -17,3 +20,6 @@ health by offering a non-invasive, adaptive, and user-centered tool for anxiety 
 Keywords: artificial intelligence, mental health, anxiety management, personalized therapy, 
 image generation, reinforcement learning, generative adversarial networks, user-centered 
 design.
+
+Block Diagram - 
+![image](https://github.com/user-attachments/assets/5d736c3f-4523-488a-9780-d1ae9aac25e8)
